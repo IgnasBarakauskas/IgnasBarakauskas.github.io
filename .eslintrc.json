@@ -57,6 +57,7 @@
 		"no-return-assign": ["error", "except-parens"],
 		"class-methods-use-this": "off",
 		"no-case-declarations": "warn",
+		"jsx-a11y/label-has-associated-control": "off",
 		"import/prefer-default-export": "off",
 		"no-continue": "off"
 	}

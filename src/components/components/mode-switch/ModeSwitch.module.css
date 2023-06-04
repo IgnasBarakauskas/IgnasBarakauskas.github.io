@@ -1,0 +1,44 @@
+.input {
+	height: 32px;
+	width: 54px;
+	background-color: var(--color-dark);
+	border: 1px solid var(--color-light);
+	overflow: hidden;
+	border-radius: 16px;
+	transition: var(--theme-transition);
+}
+.input[data-is-light="true"] {
+	height: 32px;
+	width: 54px;
+	background-color: var(--color-light);
+	border: 1px solid var(--color-dark);
+	border-radius: 16px;
+}
+.slider {
+	margin: 2px;
+	margin-left: -2px;
+	height: 24px;
+	width: 24px;
+	border-radius: 50%;
+	background-color: rgb(255, 205, 1);
+	transition: var(--theme-transition);
+}
+.slider[data-is-light="false"] {
+	margin-left: 18px;
+	background-color: rgb(247, 222, 172);
+}
+.slider--delayed {
+	position: relative;
+	height: 24px;
+	width: 24px;
+	top: -26px;
+	left: 12px;
+	border-radius: 50%;
+	background-color: var(--color-dark);
+	transition: var(--theme-transition);
+}
+.slider--delayed[data-is-light="true"] {
+	top: -26px;
+	left: -27px;
+	background-color: var(--color-light);
+}

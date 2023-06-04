@@ -1,7 +1,10 @@
 :root {
 	--color-dark: rgba(0, 20, 39, 1);
 	--color-light: rgba(240, 243, 245, 1);
+	--color-light-0: rgba(240, 243, 245, 0);
 	--color-green: rgba(83, 221, 108, 1);
+
+	--theme-transition: 0.7s;
 }
 body {
 	font-family: "League Spartan", sans-serif;
