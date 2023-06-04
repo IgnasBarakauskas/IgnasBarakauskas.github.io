@@ -1,0 +1,13 @@
+.footer {
+	height: 42px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top: 1px solid var(--color-light-1);
+}
+.footer[data-is-light="true"] {
+	border-top: 1px solid var(--color-dark-1);
+}
+.copyRight {
+	margin-right: 8px;
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Header.module.css";
-import ModeSwitch from "../components/mode-switch/ModeSwitch";
+import ModeSwitch from "./components/mode-switch/ModeSwitch";
 
 function Header({ isLightMode, onChangeLightMode }) {
 	return (

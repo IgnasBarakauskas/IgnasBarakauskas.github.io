@@ -3,8 +3,18 @@
 	width: 100vw;
 	overflow: hidden;
 	background-color: var(--color-dark);
+	color: var(--color-light);
 	transition: var(--theme-transition);
 }
 .container[data-is-light="true"] {
 	background-color: var(--color-light);
+	color: var(--color-dark);
+}
+.body {
+	display: flex;
+	height: calc(100% - 86px);
+}
+.sidePanel {
+	width: 50%;
+	height: 100%;
 }
