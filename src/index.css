@@ -1,0 +1,9 @@
+:root {
+	--color-dark: rgba(0, 20, 39, 1);
+	--color-light: rgba(240, 243, 245, 1);
+	--color-green: rgba(83, 221, 108, 1);
+}
+body {
+	font-family: "League Spartan", sans-serif;
+	margin: 0;
+}
