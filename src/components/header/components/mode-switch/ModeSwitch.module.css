@@ -1,4 +1,5 @@
 .input {
+	cursor: pointer;
 	height: 32px;
 	width: 54px;
 	background-color: var(--color-dark);

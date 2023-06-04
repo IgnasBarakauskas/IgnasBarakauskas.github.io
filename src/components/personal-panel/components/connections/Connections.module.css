@@ -1,0 +1,11 @@
+.link {
+	color: inherit;
+}
+.icon {
+	margin-left: 16px;
+	height: 24px;
+	cursor: pointer;
+}
+.icon:hover {
+	opacity: 0.6;
+}

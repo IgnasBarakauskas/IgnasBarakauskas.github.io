@@ -1,0 +1,27 @@
+.container {
+	display: flex;
+}
+.logo {
+	height: 202px;
+	width: 202px !important;
+	background-color: inherit;
+	width: fit-content;
+	fill: var(--color-light);
+	transition: var(--theme-transition);
+}
+.logo[data-is-light="true"] {
+	fill: var(--color-dark);
+}
+.profilePicture {
+	height: 202px;
+	width: 202px;
+	width: fit-content;
+	border-radius: 50%;
+	transition: var(--theme-transition);
+}
+.logo[data-is-hovered="true"] {
+	width: 0 !important;
+}
+.profilePicture[data-is-hovered="false"] {
+	width: 0;
+}

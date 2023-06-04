@@ -1,0 +1,24 @@
+.container {
+	padding: 32px 64px;
+	height: calc(100% - 64px);
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+.top__container {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.name {
+	padding-top: 16px;
+	font-size: 48px;
+	font-weight: bold;
+}
+.description {
+	padding-top: 8px;
+	font-size: 24px;
+}
