@@ -1,7 +1,15 @@
 .header {
+	position: sticky;
+	top: 0;
 	display: flex;
+	background-color: transparent;
 	align-items: center;
-	justify-content: flex-end;
+	justify-content: space-between;
 	height: 42px;
+	width: 100%;
 	padding: 0 8px;
+	background: linear-gradient(0deg, var(--color-dark-5) 0%, var(--color-dark) 100%);
+}
+.header[data-is-light-mode="true"] {
+	background: linear-gradient(0deg, var(--color-light-5) 0%, var(--color-light) 100%);
 }

@@ -11,18 +11,38 @@
 	color: var(--color-dark);
 }
 .body {
+	overflow: auto;
 	display: flex;
-	height: calc(100% - 86px);
+	flex-wrap: wrap;
+	height: calc(100% - 44px);
+	-ms-overflow-style: none;
+	scrollbar-width: none;
 }
+
+.body::-webkit-scrollbar {
+	display: none;
+}
+
 .profile {
 	flex-basis: 50%;
-	height: 100%;
+	height: calc(100% - 42px);
 }
 .experience {
 	flex-basis: 35%;
-	height: 100%;
+	height: calc(100% - 42px);
 }
 .menu {
 	flex-basis: 15%;
-	height: 100%;
+	height: calc(100% - 42px);
+}
+@media screen and (max-width: 900px) {
+	.container {
+		flex-direction: column;
+	}
+	.profile {
+		flex-basis: 100%;
+	}
+	.experience {
+		flex-basis: 100%;
+	}
 }

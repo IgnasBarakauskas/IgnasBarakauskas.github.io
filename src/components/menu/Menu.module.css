@@ -1,0 +1,19 @@
+.container {
+	width: calc(100% - 16px);
+	height: 100%;
+	padding-right: 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.menuItem {
+	cursor: pointer;
+	font-size: 24px;
+	margin-bottom: 8px;
+	opacity: 0.6;
+	transition: var(--theme-transition);
+}
+.menuItem:hover {
+	opacity: 1;
+}

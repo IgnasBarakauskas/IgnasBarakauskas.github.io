@@ -4,7 +4,8 @@ import ModeSwitch from "./components/mode-switch/ModeSwitch";
 
 function Header({ isLightMode, onChangeLightMode }) {
 	return (
-		<div className={styles.header}>
+		<div className={styles.header} data-is-light-mode={isLightMode}>
+			<div>Name</div>
 			<ModeSwitch isLightMode={isLightMode} onChangeLightMode={onChangeLightMode} />
 		</div>
 	);
