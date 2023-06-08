@@ -14,7 +14,15 @@
 	display: flex;
 	height: calc(100% - 86px);
 }
-.sidePanel {
-	width: 50%;
+.profile {
+	flex-basis: 50%;
+	height: 100%;
+}
+.experience {
+	flex-basis: 35%;
+	height: 100%;
+}
+.menu {
+	flex-basis: 15%;
 	height: 100%;
 }

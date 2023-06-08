@@ -11,10 +11,11 @@ function App() {
 		<div className={styles.container} data-is-light={isLightMode}>
 			<Header isLightMode={isLightMode} onChangeLightMode={handleChangeLightMode} />
 			<div className={styles.body}>
-				<div className={styles.sidePanel}>
+				<div className={styles.profile}>
 					<PersonalPanel isLightMode={isLightMode} />
 				</div>
-				<div className={styles.sidePanel}>Scroll</div>
+				<div className={styles.experience}>Scroll</div>
+				<div className={styles.menu}>Menu</div>
 			</div>
 			<Footer isLightMode={isLightMode} />
 		</div>

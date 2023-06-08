@@ -1,27 +1,50 @@
-.container {
-	display: flex;
-}
 .logo {
 	height: 202px;
 	width: 202px !important;
 	background-color: inherit;
 	width: fit-content;
 	fill: var(--color-light);
-	transition: var(--theme-transition);
 }
 .logo[data-is-light="true"] {
 	fill: var(--color-dark);
+	transform: rotateY(180);
 }
 .profilePicture {
 	height: 202px;
 	width: 202px;
 	width: fit-content;
 	border-radius: 50%;
+	z-index: 2;
+	transform: rotateY(0);
+}
+.container {
+	background-color: transparent;
+	width: 202px;
+	height: 202px;
+	perspective: 1000px;
+}
+
+.inner__container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
 	transition: var(--theme-transition);
+	transform-style: preserve-3d;
 }
-.logo[data-is-hovered="true"] {
-	width: 0 !important;
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.container:hover .inner__container {
+	transform: rotateY(180deg);
 }
-.profilePicture[data-is-hovered="false"] {
-	width: 0;
+.front,
+.back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden; /* Safari */
+	backface-visibility: hidden;
+}
+.back {
+	transform: rotateY(180deg);
 }
