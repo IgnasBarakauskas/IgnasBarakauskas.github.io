@@ -9,7 +9,7 @@ function PersonalPanel({ isLightMode }) {
 			<div className={styles.top__container}>
 				<IBLogo isLightMode={isLightMode} />
 				<div className={styles.name}>Ignas Barakauskas</div>
-				<div className={styles.description}>Full-stack developer ready for challenges</div>
+				<div className={styles.description}>Full-stack developer at Aitenders</div>
 			</div>
 			<Connections />
 		</div>

@@ -6,6 +6,7 @@
 	--color-light-1: rgba(240, 243, 245, 0.1);
 	--color-light-5: rgba(240, 243, 245, 0.5);
 	--color-green: rgba(83, 221, 108, 1);
+	--color-green-3: rgba(83, 221, 108, 0.3);
 
 	--theme-transition: 0.7s;
 }

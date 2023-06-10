@@ -1,0 +1,16 @@
+.container {
+	max-width: calc(100% - 32px);
+	max-height: calc(100% - 80px);
+	overflow: auto;
+	padding: 40px 16px;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+.container::-webkit-scrollbar {
+	display: none;
+}
+
+.experience {
+	height: 10000px;
+}

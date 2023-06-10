@@ -1,14 +1,18 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import styles from "./App.module.css";
-import { Header, PersonalPanel, Footer, Menu } from "./components";
+import { Header, PersonalPanel, Footer, Menu, MiddlePanel } from "./components";
 
 function App() {
 	const [isLightMode, setIsLightMode] = useState(false);
 	const [hideMenu, setHideMenu] = useState(false);
+	const aboutRef = useRef(null);
+	const experienceRef = useRef(null);
+	const projectsRef = useRef(null);
 	const handleChangeLightMode = () => {
 		setIsLightMode((prev) => !prev);
 	};
 	useEffect(() => {
+		setHideMenu(window.innerWidth > 900);
 		const handleLogoSize = () => {
 			setHideMenu(window.innerWidth > 900);
 		};
@@ -17,17 +21,30 @@ function App() {
 			window.removeEventListener("resize", handleLogoSize);
 		};
 	}, []);
+	const handleClickMenu = (menu) => {
+		if (menu === "about") {
+			aboutRef.current.scrollIntoView({ behavior: "smooth" });
+		}
+		if (menu === "experience") {
+			experienceRef.current.scrollIntoView({ behavior: "smooth" });
+		}
+		if (menu === "projects") {
+			projectsRef.current.scrollIntoView({ behavior: "smooth" });
+		}
+	};
 	return (
 		<div className={styles.container} data-is-light={isLightMode}>
 			<div className={styles.body}>
-				<Header isLightMode={isLightMode} onChangeLightMode={handleChangeLightMode} />
+				<Header hideMenu={hideMenu} isLightMode={isLightMode} onChangeLightMode={handleChangeLightMode} />
 				<div className={styles.profile}>
 					<PersonalPanel isLightMode={isLightMode} />
 				</div>
-				<div className={styles.experience}>Scroll</div>
+				<div className={styles.experience}>
+					<MiddlePanel aboutRef={aboutRef} experienceRef={experienceRef} projectsRef={projectsRef} />
+				</div>
 				{hideMenu && (
 					<div className={styles.menu}>
-						<Menu />
+						<Menu onClickMenu={handleClickMenu} />
 					</div>
 				)}
 			</div>

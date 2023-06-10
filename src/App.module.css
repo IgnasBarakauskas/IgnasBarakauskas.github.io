@@ -25,14 +25,17 @@
 
 .profile {
 	flex-basis: 50%;
+	max-width: 50%;
 	height: calc(100% - 42px);
 }
 .experience {
 	flex-basis: 35%;
+	max-width: 35%;
 	height: calc(100% - 42px);
 }
 .menu {
 	flex-basis: 15%;
+	max-width: 15%;
 	height: calc(100% - 42px);
 }
 @media screen and (max-width: 900px) {
@@ -41,8 +44,10 @@
 	}
 	.profile {
 		flex-basis: 100%;
+		min-width: 100%;
 	}
 	.experience {
 		flex-basis: 100%;
+		min-width: 100%;
 	}
 }

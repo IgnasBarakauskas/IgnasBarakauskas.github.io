@@ -1,0 +1,12 @@
+.container {
+	display: flex;
+	width: 100%;
+	overflow: scroll;
+	padding-top: 8px;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+.container::-webkit-scrollbar {
+	display: none;
+}

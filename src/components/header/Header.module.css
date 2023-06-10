@@ -13,3 +13,7 @@
 .header[data-is-light-mode="true"] {
 	background: linear-gradient(0deg, var(--color-light-5) 0%, var(--color-light) 100%);
 }
+.menuName {
+	font-size: 24px;
+	font-weight: bold;
+}
