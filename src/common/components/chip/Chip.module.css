@@ -2,7 +2,7 @@
 	width: fit-content;
 	white-space: nowrap;
 	display: inline-block;
-	padding: 8px;
+	padding: var(--spacing-s);
 	border-radius: 20px;
 	font-weight: bold;
 	background-color: var(--color-green-3);

@@ -2,7 +2,7 @@
 	color: inherit;
 }
 .icon {
-	margin-left: 16px;
+	margin-left: var(--spacing-m);
 	height: 24px;
 	cursor: pointer;
 }

@@ -1,13 +1,13 @@
 import React from "react";
-import { About, Experience, Projects } from "./components";
+import { About, Experience, Certificates } from "./components";
 import styles from "./MiddlePanel.module.css";
 
-function MiddlePanel({ aboutRef, experienceRef, projectsRef }) {
+function MiddlePanel({ aboutRef, experienceRef, certificatesRef }) {
 	return (
 		<div className={styles.container}>
 			<About ref={aboutRef} />
 			<Experience ref={experienceRef} />
-			<Projects ref={projectsRef} />
+			<Certificates ref={certificatesRef} />
 		</div>
 	);
 }

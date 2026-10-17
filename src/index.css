@@ -9,6 +9,10 @@
 	--color-green-3: rgba(83, 221, 108, 0.3);
 
 	--theme-transition: 0.7s;
+
+	--spacing-xs: 4px;
+	--spacing-s: 8px;
+	--spacing-m: 16px;
 }
 body {
 	font-family: "League Spartan", sans-serif;

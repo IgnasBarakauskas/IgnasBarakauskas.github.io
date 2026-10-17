@@ -9,5 +9,5 @@
 	border-top: 1px solid var(--color-dark-1);
 }
 .copyRight {
-	margin-right: 8px;
+	margin-right: var(--spacing-s);
 }

@@ -7,7 +7,7 @@
 	justify-content: space-between;
 	height: 42px;
 	width: 100%;
-	padding: 0 8px;
+	padding: 0 var(--spacing-s);
 	background: linear-gradient(0deg, var(--color-dark-5) 0%, var(--color-dark) 100%);
 }
 .header[data-is-light-mode="true"] {

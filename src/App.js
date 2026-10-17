@@ -7,7 +7,7 @@ function App() {
 	const [hideMenu, setHideMenu] = useState(false);
 	const aboutRef = useRef(null);
 	const experienceRef = useRef(null);
-	const projectsRef = useRef(null);
+	const certificatesRef = useRef(null);
 	const handleChangeLightMode = () => {
 		setIsLightMode((prev) => !prev);
 	};
@@ -28,8 +28,8 @@ function App() {
 		if (menu === "experience") {
 			experienceRef.current.scrollIntoView({ behavior: "smooth" });
 		}
-		if (menu === "projects") {
-			projectsRef.current.scrollIntoView({ behavior: "smooth" });
+		if (menu === "certificates") {
+			certificatesRef.current.scrollIntoView({ behavior: "smooth" });
 		}
 	};
 	return (
@@ -40,7 +40,7 @@ function App() {
 					<PersonalPanel isLightMode={isLightMode} />
 				</div>
 				<div className={styles.experience}>
-					<MiddlePanel aboutRef={aboutRef} experienceRef={experienceRef} projectsRef={projectsRef} />
+					<MiddlePanel aboutRef={aboutRef} certificatesRef={certificatesRef} experienceRef={experienceRef} />
 				</div>
 				{hideMenu && (
 					<div className={styles.menu}>

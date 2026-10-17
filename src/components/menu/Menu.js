@@ -11,8 +11,8 @@ function Menu({ onClickMenu }) {
 				<div className={styles.menuItem} role="presentation" onClick={() => onClickMenu("experience")}>
 					Experience
 				</div>
-				<div className={styles.menuItem} role="presentation" onClick={() => onClickMenu("projects")}>
-					Projects
+				<div className={styles.menuItem} role="presentation" onClick={() => onClickMenu("certificates")}>
+					Certificates
 				</div>
 			</div>
 		</div>

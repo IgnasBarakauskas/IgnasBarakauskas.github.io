@@ -2,7 +2,7 @@
 	max-width: calc(100% - 32px);
 	max-height: calc(100% - 80px);
 	overflow: auto;
-	padding: 40px 16px;
+	padding: 40px var(--spacing-m);
 	-ms-overflow-style: none;
 	scrollbar-width: none;
 }

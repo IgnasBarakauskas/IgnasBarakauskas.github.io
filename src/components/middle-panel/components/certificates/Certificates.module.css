@@ -5,5 +5,5 @@
 .title {
 	font-size: 24px;
 	font-weight: bold;
-	padding-bottom: 16px;
+	padding-bottom: var(--spacing-m);
 }

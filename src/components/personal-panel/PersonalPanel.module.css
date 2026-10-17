@@ -14,11 +14,11 @@
 	flex-direction: column;
 }
 .name {
-	padding-top: 16px;
+	padding-top: var(--spacing-m);
 	font-size: 48px;
 	font-weight: bold;
 }
 .description {
-	padding-top: 8px;
+	padding-top: var(--spacing-s);
 	font-size: 24px;
 }
