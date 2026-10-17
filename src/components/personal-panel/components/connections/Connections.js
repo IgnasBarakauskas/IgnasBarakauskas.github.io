@@ -5,7 +5,7 @@ import styles from "./Connections.module.css";
 
 function Connections() {
 	return (
-		<div>
+		<div className={styles.container}>
 			<a className={styles.link} href="https://github.com/IgnasBarakauskas" rel="noreferrer" target="_blank">
 				<IconComponent className={styles.icon} icon={icons.faGithub} />
 			</a>

@@ -1,11 +1,18 @@
-import React, { useReducer } from "react";
+import React, { useEffect, useState } from "react";
 import { IconComponent } from "../../../../../../common/components";
 import styles from "./ExperienceBlock.module.css";
+import { icons } from "../../../../../../common/icons";
 
-function ExperienceBlock({ icon, title, position, duration, description, subDetails }) {
-	const [expanded, inverseExpanded] = useReducer((state) => !state, false);
+function ExperienceBlock({ isExpanded, icon, title, position, duration, description, subDetails }) {
+	const [expanded, setExpanded] = useState(false);
+	useEffect(() => {
+		setExpanded(isExpanded);
+	}, [isExpanded]);
+	const handleChangeExpansion = () => {
+		setExpanded((prev) => !prev);
+	};
 	return (
-		<div className={styles.container} role="presentation" onClick={inverseExpanded}>
+		<div className={styles.container} role="presentation" onClick={handleChangeExpansion}>
 			<div>
 				<IconComponent icon={icon} />
 			</div>
@@ -16,13 +23,16 @@ function ExperienceBlock({ icon, title, position, duration, description, subDeta
 					<div className={styles.subText}>{duration}</div>
 				</div>
 				<div className={styles.description}>{description}</div>
-				{expanded && (
-					<div className={styles.subDetails}>
-						<ul className={styles.list}>
-							{Array.isArray(subDetails) &&
-								subDetails.length > 0 &&
-								subDetails.map((subDetail) => <li key={subDetail.key}>{subDetail.text}</li>)}
-						</ul>
+				<div className={styles.subDetails} data-expanded={expanded}>
+					<ul className={styles.list} data-expanded={expanded}>
+						{Array.isArray(subDetails) &&
+							subDetails.length > 0 &&
+							subDetails.map((subDetail) => <li key={subDetail.key}>{subDetail.text}</li>)}
+					</ul>
+				</div>
+				{!expanded && (
+					<div className={styles.extraInfo}>
+						<IconComponent icon={icons.faEllipsis} />
 					</div>
 				)}
 			</div>

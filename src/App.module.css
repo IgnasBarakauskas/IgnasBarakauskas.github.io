@@ -45,6 +45,7 @@
 	.profile {
 		flex-basis: 100%;
 		min-width: 100%;
+		height: fit-content;
 	}
 	.experience {
 		flex-basis: 100%;

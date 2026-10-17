@@ -1,0 +1,10 @@
+.divider {
+	display: block;
+	width: 100%;
+	height: 1px;
+	background-color: var(--color-light);
+	transition: var(--theme-transition);
+}
+.divider[data-light-mode="true"] {
+	background-color: var(--color-dark);
+}

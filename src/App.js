@@ -40,7 +40,12 @@ function App() {
 					<PersonalPanel isLightMode={isLightMode} />
 				</div>
 				<div className={styles.experience}>
-					<MiddlePanel aboutRef={aboutRef} certificatesRef={certificatesRef} experienceRef={experienceRef} />
+					<MiddlePanel
+						aboutRef={aboutRef}
+						certificatesRef={certificatesRef}
+						experienceRef={experienceRef}
+						isLightMode={isLightMode}
+					/>
 				</div>
 				{hideMenu && (
 					<div className={styles.menu}>

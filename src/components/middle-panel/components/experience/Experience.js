@@ -2,12 +2,14 @@ import React from "react";
 import styles from "./Experience.module.css";
 import { ExperienceBlock } from "./components";
 import { icons } from "../../../../common/icons";
+import { VerticalDevider } from "../../../../common/components";
 
-const About = React.forwardRef((_, ref) => (
+const About = React.forwardRef(({ isLightMode }, ref) => (
 	<div ref={ref} className={styles.container}>
 		<div className={styles.title}>Experience</div>
 		<div className={styles.experienceContainer}>
 			<ExperienceBlock
+				isExpanded
 				description="Focus on front-end engineering and the continuous evolution of the company's core platform, combining hands-on development with technical ownership and architectural decision-making."
 				duration="2023 – Present"
 				icon={icons.faCode}
@@ -36,6 +38,7 @@ const About = React.forwardRef((_, ref) => (
 				]}
 				title="Full-Stack Developer"
 			/>
+			<VerticalDevider isLightMode={isLightMode} />
 			<ExperienceBlock
 				description="Developed a Microsoft Word add-in integrating with the company's core platform, working across front-end and back-end components."
 				duration="2022 – 2023"
@@ -57,7 +60,7 @@ const About = React.forwardRef((_, ref) => (
 				]}
 				title="Full-Stack Development Intern"
 			/>
-			<span />
+			<VerticalDevider isLightMode={isLightMode} />
 			<ExperienceBlock
 				description="Contributed to the core platform by developing an activity historization feature, working across the front end and back end."
 				duration="2021 – 2022"

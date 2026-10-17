@@ -7,3 +7,6 @@
 	font-weight: bold;
 	padding-bottom: var(--spacing-m);
 }
+.text {
+	font-family: "Inter", sans-serif;
+}
