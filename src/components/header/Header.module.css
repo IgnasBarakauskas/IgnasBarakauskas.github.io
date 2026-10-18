@@ -4,14 +4,15 @@
 	display: flex;
 	background-color: transparent;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: flex-end;
 	height: 42px;
 	width: 100%;
 	padding: 0 var(--spacing-s);
-	background: linear-gradient(0deg, var(--color-dark-5) 0%, var(--color-dark) 100%);
+	transition: var(--theme-transition);
+	background-color: var(--color-dark);
 }
 .header[data-is-light-mode="true"] {
-	background: linear-gradient(0deg, var(--color-light-5) 0%, var(--color-light) 100%);
+	background-color: var(--color-light);
 }
 .menuName {
 	font-size: 24px;

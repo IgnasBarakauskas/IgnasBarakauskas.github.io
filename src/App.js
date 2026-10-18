@@ -35,7 +35,7 @@ function App() {
 	return (
 		<div className={styles.container} data-is-light={isLightMode}>
 			<div className={styles.body}>
-				<Header hideMenu={hideMenu} isLightMode={isLightMode} onChangeLightMode={handleChangeLightMode} />
+				<Header isLightMode={isLightMode} onChangeLightMode={handleChangeLightMode} />
 				<div className={styles.profile}>
 					<PersonalPanel isLightMode={isLightMode} />
 				</div>
