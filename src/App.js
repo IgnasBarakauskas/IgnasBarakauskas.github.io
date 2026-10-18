@@ -8,6 +8,9 @@ function App() {
 	const aboutRef = useRef(null);
 	const experienceRef = useRef(null);
 	const certificatesRef = useRef(null);
+	useEffect(() => {
+		setIsLightMode(!window.matchMedia("(prefers-color-scheme: dark)").matches);
+	}, []);
 	const handleChangeLightMode = () => {
 		setIsLightMode((prev) => !prev);
 	};

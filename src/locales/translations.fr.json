@@ -1,3 +1,36 @@
 {
-	"about.title": "À propos de moi"
+	"personal-panel.job-title": "Développeur full-stack chez Aitenders",
+
+	"about.title": "À propos de moi",
+	"about.sub-text": "Développeur full-stack spécialisé dans le développement front-end, les intégrations complexes et la responsabilité technique. Depuis mon arrivée chez AItenders, j’ai évolué d’un poste de stagiaire vers la prise en charge de fonctionnalités clés du produit, la contribution aux décisions techniques et le développement de fonctionnalités sur l’ensemble de la stack React, TypeScript, Java et Spring Boot. De la création d’un complément Microsoft Word exigeant en matière de performances à la modernisation d’une plateforme existante, j’aime résoudre des problèmes complexes grâce à la recherche, à une approche d’ingénierie réfléchie et à une attention particulière portée à la maintenabilité à long terme.",
+
+	"experience.first.description": "Spécialisé dans le développement front-end et l’évolution continue de la plateforme centrale de l’entreprise, en alliant développement opérationnel, responsabilité technique et prise de décisions architecturales.",
+	"experience.first.duration": "Aujourd’hui",
+	"experience.first.position": "AItenders · Temps plein",
+	"experience.first.title": "Développeur full-stack",
+	"experience.first.sub-details-1": "Responsabilité technique : Assurer le rôle de développeur référent pour l’orientation technique d’un complément Microsoft Word, en prenant les décisions d’implémentation et en évaluant les compromis afin de garantir la maintenabilité et les performances.",
+	"experience.first.sub-details-2": "Modernisation de la plateforme : Initier et piloter des améliorations, notamment l’adoption progressive de TypeScript, l’internationalisation, la refonte de l’architecture et l’optimisation des performances.",
+	"experience.first.sub-details-3": "Exploration technique : Étudier des problématiques complexes ou peu familières, évaluer les risques et valider les solutions potentielles avant leur mise en œuvre.",
+	"experience.first.sub-details-4": "Pratiques d’ingénierie : Explorer des approches efficaces pour intégrer l’IA aux processus de développement et partager les enseignements tirés à travers des articles techniques internes.",
+	"experience.first.sub-details-5": "Mentorat : Accompagner les stagiaires et les autres développeurs grâce à des conseils techniques, des revues de code constructives et une résolution collaborative des problèmes. Encourager l’autonomie et la réflexion en aidant chacun à aborder les problèmes sous différents angles plutôt qu’en fournissant simplement des réponses, tout en contribuant à un environnement de travail bienveillant, collaboratif et inclusif.",
+	"experience.second.description": "Développement d’un complément Microsoft Word intégré à la plateforme centrale de l’entreprise, avec une intervention sur les composants front-end et back-end.",
+	"experience.second.duration": "2022 – 2023",
+	"experience.second.position": "AItenders · Stage de fin d’études (Master)",
+	"experience.second.title": "Stagiaire en développement full-stack",
+	"experience.second.sub-details-1": "Développé des fonctionnalités applicatives avec React et Office.js, ainsi qu’un back-end basé sur Java et Spring Boot.",
+	"experience.second.sub-details-2": "Analysé des problèmes de performance liés à une intégration complexe, pour laquelle la documentation existante fournissait peu d’indications.",
+	"experience.second.sub-details-3": "Étudié et évalué différentes approches d’implémentation afin de répondre aux contraintes techniques et d’améliorer les performances.",
+	"experience.third.description": "Contribué au développement de la plateforme centrale en mettant en place une fonctionnalité d’historisation des activités, en intervenant à la fois sur le front-end et le back-end.",
+	"experience.third.duration": "2022 – 2022",
+	"experience.third.position": "Stage de fin d’études (Licence)",
+	"experience.third.title": "Stagiaire en développement front-end",
+	"experience.third.sub-details-1": "Développé des fonctionnalités destinées aux utilisateurs avec React.",
+	"experience.third.sub-details-2": "Intégré des composants front-end aux services Java et Spring Boot.",
+	"experience.third.sub-details-3": "Développé de nouvelles fonctionnalités au sein d’une application existante, tout en acquérant de l’expérience en développement full-stack et en pratiques de développement logiciel en environnement de production.",
+
+	"certificates:title": "Certifications",
+
+	"menu.about": "À propos",
+	"menu.experience": "Expérience",
+	"menu.certificates": "Certifications"
 }

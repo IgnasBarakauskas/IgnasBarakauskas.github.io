@@ -1,18 +1,20 @@
 import React from "react";
 import styles from "./Menu.module.css";
+import { useLanguage } from "../../LanguageContext";
 
 function Menu({ onClickMenu }) {
+	const { translate } = useLanguage();
 	return (
 		<div className={styles.container}>
 			<div>
 				<div className={styles.menuItem} role="presentation" onClick={() => onClickMenu("about")}>
-					About
+					{translate("menu.about")}
 				</div>
 				<div className={styles.menuItem} role="presentation" onClick={() => onClickMenu("experience")}>
-					Experience
+					{translate("menu.experience")}
 				</div>
 				<div className={styles.menuItem} role="presentation" onClick={() => onClickMenu("certificates")}>
-					Certificates
+					{translate("menu.certificates")}
 				</div>
 			</div>
 		</div>
