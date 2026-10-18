@@ -1,0 +1,23 @@
+.btn {
+	display: flex;
+	align-items: center;
+	gap: var(--spacing-xs);
+	padding: 0 !important;
+	background-color: transparent;
+	border: none;
+	height: 32px;
+	font-family: "Inter", sans-serif;
+	color: var(--color-light);
+	transition: var(--theme-transition);
+	cursor: pointer;
+}
+.btn[data-is-light-mode="true"] {
+	color: var(--color-dark);
+}
+.langText {
+	opacity: 1;
+	transition: opacity var(--theme-transition) ease;
+}
+.dimmed {
+	opacity: 0.5;
+}
