@@ -14,3 +14,9 @@
 .experience {
 	height: 10000px;
 }
+@media screen and (max-width: 900px) {
+	.container {
+		overflow: hidden;
+		max-height: none;
+	}
+}
